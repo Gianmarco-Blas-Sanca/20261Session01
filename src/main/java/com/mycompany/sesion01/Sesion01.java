@@ -3,8 +3,10 @@
  */
 
 package com.mycompany.sesion01;
+import Controlador.ControladorOperaciones;
 import java.util.Scanner;
 import modelo.Operacion;
+import vista.frmOperaciones;
 /**
  *
  * @author F20LAB207E06
@@ -26,7 +28,10 @@ public class Sesion01 {
         System.out.println("La suma es "+ operacion.sumar());
         System.out.println("La resta es "+ operacion.restar());
         System.out.println("La multiplicacion es "+ operacion.multiplicar());
-        
+        Operacion modelo=new Operacion(20,30);
+        frmOperaciones vista=new frmOperaciones();
+        ControladorOperaciones controlador= new ControladorOperaciones(modelo,vista);
+        controlador.iniciar();
     }
 }
 //un paquete es una carpeta para odenar mis clases
