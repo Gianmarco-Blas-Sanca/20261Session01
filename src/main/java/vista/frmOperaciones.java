@@ -47,11 +47,21 @@ public class frmOperaciones extends javax.swing.JFrame {
 
         lblResultado.setText("jLabel3");
 
-        txtOperador1.setText("jTextField1");
+        txtOperador1.setText(" .");
+        txtOperador1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtOperador1ActionPerformed(evt);
+            }
+        });
 
-        txtOperador2.setText("jTextField2");
+        txtOperador2.setText(".");
+        txtOperador2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtOperador2ActionPerformed(evt);
+            }
+        });
 
-        btnSumar.setText("jButton1");
+        btnSumar.setText("SUMAR");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -74,7 +84,7 @@ public class frmOperaciones extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(179, 179, 179)
                         .addComponent(btnSumar)))
-                .addContainerGap(151, Short.MAX_VALUE))
+                .addContainerGap(158, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -96,6 +106,14 @@ public class frmOperaciones extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtOperador1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOperador1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtOperador1ActionPerformed
+
+    private void txtOperador2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOperador2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtOperador2ActionPerformed
 
     /**
      * @param args the command line arguments

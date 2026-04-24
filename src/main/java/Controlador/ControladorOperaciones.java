@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Controlador;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import modelo.Operacion;
 import vista.frmOperaciones;
 /**
@@ -12,6 +14,7 @@ import vista.frmOperaciones;
 public class ControladorOperaciones {
     private Operacion modelo;
     private frmOperaciones vista;
+    
     public ControladorOperaciones(Operacion modelo,frmOperaciones vista){
         this.modelo=modelo;
         this.vista=vista;
