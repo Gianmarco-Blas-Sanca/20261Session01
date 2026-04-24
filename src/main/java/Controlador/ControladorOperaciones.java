@@ -23,9 +23,12 @@ public class ControladorOperaciones {
             vista.lblResultado.setText(String.valueOf(modelo.sumar()));
         }
         });
-        
-        
-        
+               
+    }
+    
+    public void iniciar(){
+        this.vista.setLocationRelativeTo(null);
+        this.vista.setVisible(true);
     }
     
 }
